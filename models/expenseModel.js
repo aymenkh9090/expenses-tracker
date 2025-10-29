@@ -37,3 +37,6 @@ const expenseSchema = new mongoose.Schema(
     },
     {timestamps:true}
 );
+
+const Expense = mongoose.model("CopyExpense",expenseSchema);
+module.exports = Expense;
